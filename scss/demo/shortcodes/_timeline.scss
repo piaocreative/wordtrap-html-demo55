@@ -1,0 +1,21 @@
+.timeline {
+    border-bottom: 1px solid #989898;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    &:nth-child(1) {
+        border-top: 1px solid #989898;
+    }
+
+    h2 {
+        font-family: $body-font;
+        font-weight: 600;
+        color: #aaaaaa;
+    }
+
+    p {
+        font-family: $body-font;
+        font-size: 0.825rem;
+        line-height: 1.7;
+    }
+}

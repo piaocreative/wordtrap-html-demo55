@@ -1,0 +1,249 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.service {
+	margin-bottom: 0.875rem;
+	position: relative;
+	border-radius: 1.5rem;
+
+	.service-preview {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 3rem;
+		background-color: #f8f8f8;
+		border-radius: 2rem;
+	}
+
+	.service-category {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem 3rem;
+		background-color: #f8f8f8;
+		border-radius: 2rem;
+		margin-bottom: 0.875rem;
+	}
+
+	.service-details {
+		padding-top: 1.875rem;
+		padding-bottom: 1.875rem;
+		z-index: 1;
+	}
+
+	.service-price {
+		font-size: 1rem;
+		font-family: $body-font;
+		font-weight: 700;
+		line-height: 1;
+		color: $secondary;
+
+		del {
+			position: relative;
+			margin-left: 0.5rem;
+			color: $secondary;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+
+	.service-info {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		font-weight: 700;
+		line-height: 1;
+
+		i {
+			font-size: 0.65rem;
+			margin-right: 1.5rem;
+		}
+	}
+
+	.service-title {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 700;
+		color: $secondary;
+	}
+
+	.service-btns {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.read-more-link {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		border-radius: 0.5rem;
+		color: #3e3440;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+
+		i {
+			font-size: 1.5rem;
+			margin-left: 1rem;
+			background-color: $theme-color;
+			color: $white;
+			padding: 0.5rem 0.8rem;
+			border-radius: 50%;
+		}
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+    position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.825rem;
+    padding: 0.75rem 1.5rem;
+	font-family: $body-font;
+	font-weight: 700;
+	border-top-right-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+	text-transform: uppercase;
+    line-height: 1;
+    z-index: 2;
+}
+
+.onhot {
+	top: 0;
+	left: 0;
+	font-size: .8rem;
+	color: $white;
+	letter-spacing: 0.1rem;
+	background-color: $theme-color;
+	border-bottom-right-radius: 1rem;
+}
+
+.onnew {
+	color: $theme-color;
+}
+
+.onbest {
+	background-color: #8b5ec7;
+	color: $white;
+}
+
+.ontop {
+	background-color: #5adbde;
+	color: $white;
+}
+
+.onsale {
+	background-color: $theme-color;
+}
+
+.banner-wishlist {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fe3362;
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+
+.ads {
+    position: relative;
+    display: block;
+
+	.ads-bg {
+		img {
+			height: 100%;
+
+			@include media-breakpoint-down(lg) {
+				height: 33rem;
+			}
+		}
+
+	}
+
+	&.ads1 {
+		.ads-body {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			
+			// h2, h5{	
+			// 	letter-spacing: 0.05rem;
+			// 	line-height: 1;
+			// }
+
+			a {
+				display: inline-block;
+				font-family: $body-font;
+				font-weight: 500;
+				font-size: 1rem;
+				padding: 1rem 3rem;
+				background-color: $theme-color;
+				color: $white;
+				border-radius: 2rem;
+				text-decoration: none;
+				letter-spacing: 0.05rem;
+			}
+		}
+	}
+}
+
+/* Testimonials
+-----------------------------------------------------------------*/
+
+.testimonial {
+	position: relative;
+	padding: 3rem;
+	box-shadow: 0 0 20px 20px #fafafa;
+
+	.testimonial-image {
+		img {
+			width: 10rem;
+		}
+	}
+
+	.testimonial-details {
+		font-family: $body-font;
+		font-size: 1rem;
+		color: $secondary;
+
+	}
+	.testimonial-name, .testimonial-info {
+		font-size: 0.875rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	.testimonial-age {
+		font-weight: 400;
+	}
+
+	.testimonial-rating {
+		i {
+			color: #f5be00;
+		}
+	}
+}

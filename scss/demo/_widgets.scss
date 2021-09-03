@@ -1,0 +1,265 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	p {
+		font-family: $body-font;
+		font-weight: 400;
+		line-height: 1rem!important;
+		color: $dark;
+		font-size: 0.75rem;
+		color: #909090;
+	}
+
+	a {
+		font-family: $body-font;
+		font-weight: 400;
+	}
+
+	.widget-title {
+		color: $dark;		
+		font-size: 1rem;
+		margin-bottom: 2.2rem;
+		font-family: $body-font;
+		font-weight: 700;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.widget-content {
+			p {
+				color: $white;
+				font-size: 1.125rem;
+				display: block;
+				font-family: $heading-font;
+			}
+
+			.social-icons {
+				padding: 0;
+				list-style: none;
+	
+				li {
+					padding: 0.5rem;
+
+					&:last-child {
+						padding-right: 0;
+					}
+			
+					a {	
+						display: inline-block;
+						color: $theme-color;		
+						font-size: 1.5rem;
+						vertical-align: middle;
+						text-align: center;
+	
+						@include transition(all 0.3s ease-in-out);
+			
+						&:hover {
+							color: $secondary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+				line-height: 1;
+				margin-bottom: 1rem;
+
+				a {
+					color:$dark;
+					font-weight: 400;
+					text-decoration: none;
+					font-size: 0.875rem;
+					font-family: $body-font;
+
+					&:hover {
+						color: #363636;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 !important;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&.widget-links {
+
+			.widget-content {
+				justify-content: space-between;
+			}
+
+			ul {
+				width: auto;
+				margin: auto;
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		p {
+			color: $white;
+			font-size: 1.125rem;
+			display: block;
+			font-family: $heading-font;
+		}
+		.payments {
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem !important;
+
+				img {
+					width: 2rem !important;
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			p {
+				font-family: $body-font;
+				font-size: 0.875rem;
+				color: $dark;
+				font-weight: 400;
+				margin-left: 2rem;
+			}
+
+			.contact {
+				margin-bottom: 0.7rem;
+
+				a {	
+					font-family: $body-font;
+					font-size: 0.875rem;
+					font-weight: 400;
+					display: block;
+					text-decoration: none;
+					color: $dark;
+					line-height: 1.5;
+	
+					i {
+						font-size: 1.125rem;
+						color: $theme-color;
+						margin-right: 1rem;
+					}
+	
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+
+		}
+	}
+
+	// Widget - feedback
+	&.widget-feedback {
+		.widget-content {
+			p {
+				letter-spacing: 0.1rem
+			}
+
+			#widget-feedback-form {
+
+				input {
+					background-color: #f9f9f9;
+					color:#d0d0d0;
+				}
+				
+				.input-group-append {
+					margin-left: -2.875rem;
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			#widget-subscribe-form {
+				.input-group-append {
+					margin-left: -3rem;
+					margin-bottom: 0.5rem;
+				}
+
+				input {
+					border-bottom: 1px solid #747474;
+				}
+
+				button {
+					font-size: 1.5rem;
+					background-color: $theme-color;
+					color: #fff;
+					padding: .3rem .7rem;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	// Widget - Products
+	&.widget-products {
+		.widget-content {
+			.product {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0.625rem;
+
+				.product-image {
+					flex: 1;
+					height: 8.25rem;
+					max-width: 9.75rem;
+				}
+
+				.product-details {
+					flex: 1;
+					padding: 0 1.25rem;					
+				}
+
+				.product-price {					
+					margin-bottom: 0.625rem;
+				}
+
+				.product-title {
+					a {
+						color: $white;																		
+					}					
+				}
+			}
+		}
+	}
+}

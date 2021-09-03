@@ -1,0 +1,43 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: feature-box.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Featured Boxes
+-----------------------------------------------------------------*/
+.fbox {
+	margin-bottom: 1.875rem;
+
+	.fbox-icon {
+		img {
+			max-width: 6rem;
+			height: 4rem;
+			display: flex;
+			justify-content: center;
+			
+			@include media-breakpoint-down(lg) {
+				height: 5rem !important;
+			}
+		}
+	}
+
+	h2 {
+		line-height: 1;
+	}
+
+	p {	
+		font-family: $body-font;
+		font-size: 0.875rem;
+		color: $dark;
+		line-height: 1.7;
+	}
+
+	@include media-breakpoint-down(lg) {
+		h2 {
+			font-size: 2rem;
+		}
+	}
+}

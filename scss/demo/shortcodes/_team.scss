@@ -1,0 +1,54 @@
+
+/* ----------------------------------------------------------------
+
+	team.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Team
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for team pages. Thanks!
+-----------------------------------------------------------------*/
+
+.team {
+    position: relative;
+    margin-bottom: 1.875rem;
+
+    .team-image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .team-details {
+        padding: 1.5rem;
+        background-color: #f8f8f8;
+    }
+
+    .team-name {
+        font-family: $body-font;
+        font-size: 0.875rem;
+        color: $dark;
+        font-weight: 600;
+    }
+
+    .team-info {
+        font-family: $body-font;
+        font-size: 0.875rem;
+        color: $dark;
+        font-weight: 400;
+    }
+
+    a {
+        font-size: 0.875rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        margin: 1.5rem;
+    }
+}
