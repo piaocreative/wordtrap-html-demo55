@@ -15,12 +15,9 @@
 	
 	span {
 		font-family: $body-font;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		font-weight: 700;
-
-		&:nth-child(2) {
-			color: #cdcdcd;
-		}
+		color: #cdcdcd;
 	}
 	
 	li {
@@ -47,6 +44,7 @@
 	border-radius: 2rem;
 	text-decoration: none;
 	border: 1px solid $theme-color;
+	white-space:nowrap;
 }
 
 // slider items//
@@ -76,9 +74,24 @@
 	}
 }
 
- .slick-list {
-	 padding: 0 !important;
- }
+
+ .slick-dots {
+	width: 8rem;
+
+	li {
+		margin-left: 2rem;
+
+		button {
+			&:before {
+				content: "";
+				width: 2.5rem;
+				height: 3px;
+				background-color: $theme-color;
+				vertical-align: middle;
+			}
+		}
+	}
+}
 
 
 #subscribe {
@@ -112,13 +125,11 @@
 	}
 }
 
-//piece
-.piece {
-	img {
-		height: 21rem;
-
-		@include media-breakpoint-down(lg) {
-			height: auto;
-		}
+.video-btn {
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	a {
+		padding: 3rem;
 	}
 }

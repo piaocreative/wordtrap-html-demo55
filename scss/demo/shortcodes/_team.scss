@@ -17,7 +17,7 @@
 
 .team {
     position: relative;
-    margin-bottom: 1.875rem;
+    margin: 1rem;
 
     .team-image {
         img {
@@ -50,5 +50,13 @@
 
     @include media-breakpoint-down(lg) {
         margin: 1.5rem;
+    }
+}
+
+.teams {
+    .slick-dots {
+        display: flex;
+        bottom: -4.25rem;
+        left: 4rem;
     }
 }

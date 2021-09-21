@@ -35,7 +35,7 @@
 
 	.widget-title {
 		color: $dark;		
-		font-size: 1rem;
+		font-size: 1.125rem;
 		margin-bottom: 2.2rem;
 		font-family: $body-font;
 		font-weight: 700;
@@ -93,7 +93,7 @@
 					color:$dark;
 					font-weight: 400;
 					text-decoration: none;
-					font-size: 0.875rem;
+					font-size: 1rem;
 					font-family: $body-font;
 
 					&:hover {
@@ -154,7 +154,7 @@
 		.widget-content {
 			p {
 				font-family: $body-font;
-				font-size: 0.875rem;
+				font-size: 1rem !important;
 				color: $dark;
 				font-weight: 400;
 				margin-left: 2rem;
@@ -165,7 +165,7 @@
 
 				a {	
 					font-family: $body-font;
-					font-size: 0.875rem;
+					font-size: 1rem;
 					font-weight: 400;
 					display: block;
 					text-decoration: none;
