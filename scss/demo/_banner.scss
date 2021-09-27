@@ -24,10 +24,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-
-        @include media-breakpoint-down(lg) {
-            height: 45rem;
-        }
+        height: 45rem;
     }
 
     .banner-wrap {

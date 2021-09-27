@@ -30,6 +30,10 @@
 			background-color: $theme-color;
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
 }
 
 .sign-up-link {
@@ -59,23 +63,30 @@
  }
 
  .slick-prev {
-	 left:-10rem;
+	left:-10rem;
 
-	 @include media-breakpoint-down(lg) {
-		display: none !important;
+	@media screen and (max-height : 1600px) {
+		left: -2.5rem;
 	}
- }
-
- .slick-next {
-    right: -7rem;
 
 	@include media-breakpoint-down(lg) {
-		display: none !important;
-	}
+	   display: none !important;
+   }
 }
 
+.slick-next {
+   right: -7rem;
 
- .slick-dots {
+   @media screen and (max-height : 1600px) {
+	   right: -0.5rem;
+   }
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-dots {
 	width: 8rem;
 
 	li {
@@ -91,6 +102,19 @@
 			}
 		}
 	}
+}
+
+.get-conclution-link {
+	display: inline-block;
+	font-family: $body-font;
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 1rem 3rem;
+	background-color: $theme-color;
+	color: $white;
+	border-radius: 2rem;
+	text-decoration: none;
+	letter-spacing: 0.05rem;
 }
 
 
