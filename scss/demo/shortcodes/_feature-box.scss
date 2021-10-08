@@ -19,7 +19,7 @@
 			justify-content: center;
 			
 			@include media-breakpoint-down(lg) {
-				height: 5rem !important;
+				height: 5rem;
 			}
 		}
 	}
@@ -29,8 +29,6 @@
 	}
 
 	p {	
-		font-family: $body-font;
-		font-size: 0.875rem;
 		color: $dark;
 		line-height: 1.7;
 	}

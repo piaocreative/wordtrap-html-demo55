@@ -20,17 +20,10 @@
 	position: relative;
 
 	p {
-		font-family: $body-font;
-		font-weight: 400;
-		line-height: 1rem!important;
+		line-height: 1;
 		color: $dark;
 		font-size: 0.75rem;
 		color: #909090;
-	}
-
-	a {
-		font-family: $body-font;
-		font-weight: 400;
 	}
 
 	.widget-title {
@@ -91,11 +84,6 @@
 
 				a {
 					color:$dark;
-					font-weight: 400;
-					text-decoration: none;
-					font-size: 1rem;
-					font-family: $body-font;
-
 					&:hover {
 						color: #363636;
 						font-weight: 600;
@@ -103,15 +91,10 @@
 				}
 			}
 		}
-
-		@include media-breakpoint-down(lg) {
-			padding: 0 !important;
-		}
 	}
 
 	@include media-breakpoint-down(md) {
 		&.widget-links {
-
 			.widget-content {
 				justify-content: space-between;
 			}
@@ -140,10 +123,10 @@
 				background-size: 80% auto;
 				background-repeat: no-repeat;
 				background-position: center;
-				border-radius: 0.5rem !important;
+				border-radius: 0.5rem;
 
 				img {
-					width: 2rem !important;
+					width: 2rem;
 				}
 			}
 		}
@@ -154,9 +137,8 @@
 		.widget-content {
 			p {
 				font-family: $body-font;
-				font-size: 1rem !important;
+				font-size: 1rem;
 				color: $dark;
-				font-weight: 400;
 				margin-left: 2rem;
 			}
 
@@ -166,7 +148,6 @@
 				a {	
 					font-family: $body-font;
 					font-size: 1rem;
-					font-weight: 400;
 					display: block;
 					text-decoration: none;
 					color: $dark;
