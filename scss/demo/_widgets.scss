@@ -22,7 +22,7 @@
 	p {
 		line-height: 1;
 		color: $dark;
-		font-size: 0.75rem;
+		line-height: 1.5;
 		color: #909090;
 	}
 
@@ -136,8 +136,6 @@
 	&.widget-custom-html {
 		.widget-content {
 			p {
-				font-family: $body-font;
-				font-size: 1rem;
 				color: $dark;
 				margin-left: 2rem;
 			}
@@ -168,27 +166,6 @@
 		}
 	}
 
-	// Widget - feedback
-	&.widget-feedback {
-		.widget-content {
-			p {
-				letter-spacing: 0.1rem
-			}
-
-			#widget-feedback-form {
-
-				input {
-					background-color: #f9f9f9;
-					color:#d0d0d0;
-				}
-				
-				.input-group-append {
-					margin-left: -2.875rem;
-				}
-			}
-		}
-	}
-
 	&.widget-subscribe {
 		.widget-content {
 			#widget-subscribe-form {
@@ -207,38 +184,6 @@
 					color: #fff;
 					padding: .3rem .7rem;
 					border-radius: 50%;
-				}
-			}
-		}
-	}
-
-	// Widget - Products
-	&.widget-products {
-		.widget-content {
-			.product {
-				display: flex;
-				align-items: center;
-				margin-bottom: 0.625rem;
-
-				.product-image {
-					flex: 1;
-					height: 8.25rem;
-					max-width: 9.75rem;
-				}
-
-				.product-details {
-					flex: 1;
-					padding: 0 1.25rem;					
-				}
-
-				.product-price {					
-					margin-bottom: 0.625rem;
-				}
-
-				.product-title {
-					a {
-						color: $white;																		
-					}					
 				}
 			}
 		}

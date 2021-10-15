@@ -12,7 +12,7 @@
 .post {
 	position: relative;
 	padding-top: 2.1875rem;
-	padding-bottom: 2.1875rem;
+	padding-bottom: 1.1875rem;
 	border-bottom: 1px solid #d7dae1;
 }
 
@@ -41,8 +41,6 @@
 
 	.entry-meta {
 		a {
-			font-size: 0.875em;
-			text-decoration:none;
 			color: #939599;
 		}
 	}
@@ -55,10 +53,7 @@
 
 	.post-category {
 		a {
-			font-family: $body-font;
-			font-size: 0.875rem;
 			color: #939599;
-			text-decoration: none;
 		}
 
 		i {

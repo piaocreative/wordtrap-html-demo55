@@ -40,21 +40,6 @@
 	}
 }
 
-.sign-up-link {
-	display: inline-block;
-	background-color: $theme-color;
-	font-family: $body-font;
-	font-weight: 700;
-	font-size: .875rem;
-	color: $white;
-	letter-spacing: .1rem;
-	padding: 1rem 4rem;
-	border-radius: 2rem;
-	text-decoration: none;
-	border: 1px solid $theme-color;
-	white-space:nowrap;
-}
-
 // slider items//
 .slick-prev::before, .slick-next:before {
 	 font-size: 3rem;
@@ -106,19 +91,6 @@
 			}
 		}
 	}
-}
-
-.get-conclution-link {
-	display: inline-block;
-	font-family: $body-font;
-	font-weight: 500;
-	font-size: 1rem;
-	padding: 1rem 3rem;
-	background-color: $theme-color;
-	color: $white;
-	border-radius: 2rem;
-	text-decoration: none;
-	letter-spacing: 0.05rem;
 }
 
 

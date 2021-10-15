@@ -58,12 +58,6 @@
 		}
 	}
 
-	a {
-		&:last-child {
-			padding: 1rem 2rem;
-		}
-	}
-
 	@include media-breakpoint-down(lg) {
 		padding-left: 1rem;
 		padding-right: 1rem;

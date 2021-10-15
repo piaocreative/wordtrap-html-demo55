@@ -112,7 +112,6 @@
 		color: $dark;		
 		line-height: 1;
 		padding: 0.7rem;
-		font-family: $body-font;
 		font-weight: 700;
 
 		&:hover {
@@ -227,10 +226,8 @@
 
 	li {
 		a {
-			font-size: 1rem;
 			font-weight: 700;
 			color: $dark;
-			text-decoration: none;
 			display: flex;
 			align-items: center;
 
@@ -246,7 +243,6 @@
 		}
 
 		p {
-			font-family: $body-font;
 			font-size: 0.875rem;
 			color: $dark;
 			line-height: 1;
