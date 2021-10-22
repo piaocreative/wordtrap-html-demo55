@@ -11,16 +11,14 @@
     color: $secondary;
     line-height: 1;
     letter-spacing: 0.5rem;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 13.5rem;
+    }
 }
 
 .error-content {
     p {
         letter-spacing: 0.05rem;
-    }
-}
-
-@include media-breakpoint-down(lg) {
-    .error-logo {
-        font-size: 13.5rem;
     }
 }

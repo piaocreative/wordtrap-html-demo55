@@ -93,6 +93,23 @@
 	}
 }
 
+.banner-list {
+	margin-left: 2rem;
+
+	li {
+		list-style: disc;
+		font-size: 0.875rem;
+		margin-bottom: 0.3rem;
+
+		&::marker {
+			font-size: 1.7rem;
+			margin-top: 1rem;
+			color: $theme-color;
+			vertical-align: middle;
+		}
+	}
+}
+
 
 #subscribe {
 	input{
