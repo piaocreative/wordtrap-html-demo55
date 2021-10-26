@@ -116,14 +116,9 @@
 		border-bottom: 1px solid $white;
 	}
 
-	input[type=text], input[type=email] {
-		height: 3rem;
-	}
-
 	label {
 		color: $white;
 		font-size: 0.8rem;
-		font-family: $body-font;
 		display: block;
 		margin-bottom: -1rem;
 	}
@@ -148,5 +143,13 @@
 	left: 45%;
 	a {
 		padding: 3rem;
+	}
+}
+
+.service-lists {
+	.slick-dots {
+		display: flex;
+		left: 3rem;
+		bottom: -5rem;
 	}
 }

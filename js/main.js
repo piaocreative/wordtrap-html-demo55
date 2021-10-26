@@ -29,11 +29,13 @@ $( document ).ready( function() {
 
   $('.teams').slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    prevArrow: $(".team-prev"),
+    nextArrow: $(".team-next"),
     responsive: [
       {
         breakpoint: 1200,
@@ -60,14 +62,29 @@ $( document ).ready( function() {
     ]
 });
 
-$(".team-prev").click(function(e) {
-  e.preventDefault();
-  $('.teams').slick('slickPrev');
-})
+$('.service-lists').slick({
+  dots: true,
+  arrows: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  prevArrow: $(".service-prev"),
+  nextArrow: $(".service-next"),
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        dots: false,
+        arrows: false,
+      }
+    }
+  ]
+});
 
-$(".team-next").click(function(e) {
-  e.preventDefault();
-  $('.teams').slick('slickNext');
-})
+// var $team = $('.teams').isotope({
+//   itemSelector: '.team',
+//   layoutMode: 'fitRows'
+// });
 
 });
